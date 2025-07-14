@@ -11,6 +11,8 @@ Uma landing page temática inspirada no universo de Harry Potter. Desenvolvida c
 
 ## 📸 Preview
 ![alt text](img/image.png)
+![alt text](img/image2.png)
+![alt text](image.png)
 
 ## 🚀 Tecnologias
 

@@ -1,0 +1,244 @@
+body {
+  font-family: 'Poppins', sans-serif;
+  color: black;
+  font-size: 18px;
+  line-height: 1.6;
+  margin: 0;
+  padding: 0;
+
+  /* Fundo com imagem + gradiente animado */
+  background-image: 
+    url("img/harrypotter.jpg"),
+    linear-gradient(270deg, #844c33, #4a5060, #6b4c84, #3c6f91);
+  background-size: cover, 800% 800%;
+  background-repeat: no-repeat, repeat;
+  background-position: center, center;
+  animation: gradientBG 60s ease infinite;
+}
+
+@keyframes gradientBG {
+  0% { background-position: center 0%, 0% 50%; }
+  50% { background-position: center 100%, 100% 50%; }
+  100% { background-position: center 0%, 0% 50%; }
+}
+
+header {
+  background-color: #222;
+  padding: 20px;
+}
+
+.menu {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  padding: 0;
+  margin: 0;
+}
+
+.menu li a {
+  color: #fff;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.conteudo-principal {
+  padding: 40px 20px;
+  text-align: center;
+}
+
+h1, h2 {
+  color: #c9b037;
+}
+
+.titulo2 {
+  color: black;
+}
+
+.texto {
+  font-size: 26px;
+  margin-top: 30px;
+  margin-left: 90px;
+  margin-right: 10px;
+  color: #fff;
+}
+
+.texim {
+  display: flex;
+  margin-top: 45px;
+}
+
+.imagem {
+  max-width: 100%;
+  border-radius: 10px;
+  margin-top: 30px;
+  margin-left: 20px;
+  margin-right: 50px;
+}
+
+.cta {
+  margin: 20px auto 0;
+  padding: 12px 24px;
+  background-color: #d3a625;
+  color: #fff;
+  font-size: 1rem;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background 0.3s;
+  display: block;
+  max-width: fit-content;
+}
+
+.cta:hover {
+  background-color: #b4881b;
+}
+
+.sobre-universo, .casas-hogwarts, .cta-final {
+  padding: 60px 20px;
+  max-width: 1000px;
+  margin: auto;
+  text-align: center;
+}
+
+.sobre-universo p {
+  font-size: 18px;
+  color: #f8f8f8;
+  line-height: 1.6;
+  margin-top: 20px;
+}
+
+.casas-hogwarts .cards-casas {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+  margin-top: 30px;
+}
+
+.casa {
+  background-color: #c9b037;
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+  width: 200px;
+  transition: transform 0.3s;
+}
+
+.casa:hover {
+  transform: scale(1.05);
+}
+
+.casa h3 {
+  margin-bottom: 10px;
+}
+
+.cta-final {
+  background-color: #1a1a1a;
+  color: #fff;
+  border-radius: 12px;
+  padding: 50px 20px;
+  margin-top: 60px;
+}
+
+.btn-cta {
+  display: inline-block;
+  margin-top: 20px;
+  padding: 12px 24px;
+  background-color: #d3a625;
+  color: #fff;
+  font-weight: bold;
+  text-decoration: none;
+  border-radius: 8px;
+  transition: background 0.3s;
+}
+
+.btn-cta:hover {
+  background-color: #b4881b;
+}
+
+.bloco-links {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 40px;
+  padding: 60px 20px;
+  flex-wrap: wrap;
+  background-color: rgba(255, 255, 255, 0.1);
+  border-radius: 12px;
+  margin: 60px auto;
+  max-width: 1200px;
+}
+
+.bloco-links .links,
+.bloco-links .linksint {
+  flex: 1;
+  min-width: 250px;
+}
+
+.bloco-links h2 {
+  font-size: 1.5em;
+  color: #050505;
+  margin-bottom: 20px;
+}
+
+.bloco-links a {
+  display: block;
+  color: #fff;
+  background-color: #3c3c3c;
+  padding: 12px 18px;
+  margin-bottom: 12px;
+  border-radius: 8px;
+  text-decoration: none;
+  transition: background 0.3s ease;
+}
+
+.bloco-links a:hover {
+  background-color: #b4881b;
+}
+
+.background {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  z-index: 1;
+  pointer-events: none;
+  overflow: hidden;
+}
+
+.background li {
+  position: absolute;
+  display: block;
+  background: rgba(143, 122, 46, 0.2);
+  animation: animate 30s linear infinite;
+  bottom: -150px;
+}
+
+.triangle {
+  width: 0;
+  height: 0;
+  border-left: 20px solid transparent;
+  border-right: 20px solid transparent;
+  border-bottom: 35px solid rgba(255, 255, 255, 0.2);
+  background: none;
+}
+
+@keyframes animate {
+  0% {
+    transform: translateY(0) rotate(0deg);
+    opacity: 1;
+  }
+  100% {
+    transform: translateY(-1000px) rotate(720deg);
+    opacity: 0;
+  }
+}
+
+footer {
+  background-color: #222;
+  color: #fff;
+  padding: 20px;
+  text-align: center;
+}
